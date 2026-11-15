@@ -1,132 +1,131 @@
-# Awesome-PCI-DSS-Data-Security-Management
+# Awesome PCI-DSS & Data Security Management 🛡️💳
 
-# Awesome PCI-DSS & Data Security Management
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome PCI-DSS and Data Security Management Banner" width="100%"/>
+</p>
 
-> A curated list of top PCI-DSS and Data Security Management platforms — both SaaS/Hosted commercial cloud security suites and open-source alternatives for maintaining compliance, discovering sensitive data, and securing payment environments.
-> 🌟 Star this repo if you find it useful! 🌟
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management?style=flat-square&color=yellow" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management?style=flat-square&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-PCI-DSS-Data-Security-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CC0--1.0-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
-
-## 📋 Table of Contents
-
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Prisma Cloud](#prisma-cloud)
-  - [Orca Security](#orca-security)
-  - [Lacework (FortiCNAPP)](#lacework-forticnapp)
-  - [Datadog Cloud Security](#datadog-cloud-security)
-  - [CrowdStrike Falcon](#crowdstrike-falcon)
-  - [Wiz](#wiz)
-- [Open-Source Software](#-open-source-software)
-  - [OpenWatch](#openwatch)
-  - [Semgrep](#semgrep)
-  - [pci-dss-mcp](#pci-dss-mcp)
-  - [Safeguard SCA / SBOM](#safeguard-sca--sbom)
-  - [OpenSCAP](#openscap)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+> 🛡️ **A curated collection of top PCI-DSS (Payment Card Industry Data Security Standard) and Data Security Management platforms** — covering Cloud Security Posture Management (CSPM), Cloud Native Application Protection Platforms (CNAPP), Cardholder Data Environment (CDE) isolation, sensitive data discovery, vulnerability scanning, and open-source continuous compliance frameworks.
+>
+> 🌟 *Star this repository if you find it valuable for your security, devops, or compliance audits!* 🌟
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 📑 Table of Contents
 
-Commercial, cloud-hosted PCI-DSS and Data Security Management platforms. These are not open-source but are included as reference points for feature comparison.
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS & Commercial Hosted Platforms](#-saas--commercial-hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [📊 Comparison at a Glance](#-comparison-at-a-glance)
+- [📈 Star History](#-star-history)
+- [💖 Support](#-support)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-### Prisma Cloud
-**Type:** Cloud-native security with 50+ compliance frameworks
-Prisma Cloud provides full visibility into cloud assets and simplifies compliance reporting with support for **50+ compliance standards including PCI DSS**, HIPAA, GDPR, SOC2, NIST 800-53, and custom frameworks . It offers one-click audit-ready reporting, out-of-the-box policies mapped to compliance controls, and the ability to create custom compliance frameworks specific to your environment . Compliance reports can be generated on-demand or on a recurring basis, filtered by regions, clouds, and accounts .
-**Best for:** Organizations wanting comprehensive cloud security posture management with broad compliance framework coverage and customizable reporting.
+---
 
-### Orca Security
-**Type:** Agentless cloud security with compliance monitoring
-Orca Security provides agentless cloud security across Azure, AWS, and OCI, with pre-built frameworks for **SOC 2, PCI DSS, HIPAA, ISO 27001, NIST, CIS, FedRAMP, and 185+ more** . It offers continuous evidence collection, real-time drift alerts, and one-click compliance reports ready for auditors. Case study customer Elo (a global payments company) used Orca to maintain PCI DSS compliance while consolidating multicloud risk visibility and reducing critical risks .
-**Best for:** Organizations wanting agentless cloud security with broad compliance coverage and no operational overhead from agent deployment.
+## 🌐 Sector Overview & Market Dynamics
 
-### Lacework (FortiCNAPP)
-**Type:** Cloud security with CLI-driven compliance reports
-Lacework (now FortiCNAPP) provides continuous compliance monitoring against **CIS, PCI DSS, SOC II, and HIPAA** benchmarks, with compliance reports running automatically on a daily basis . The `lacework compliance` CLI command supports AWS, Google Cloud, and Azure, with output in PDF and CSV formats, and filtering by category, severity, status, and service. Fortinet's integration with Lacework automates identification of cloud resources and configurations, ensuring adherence to industry best practices and regulatory requirements .
-**Best for:** Teams wanting CLI-driven compliance reporting with automation-friendly workflows and multi-cloud support.
+The global data security and compliance management market is valued at approximately **$24.5 billion** (with the broader Cloud Security Posture & CNAPP market projected to surpass **$38 billion by 2030** at an annual growth rate exceeding 19%). The sector is **moderately fragmented yet increasingly consolidating**, characterized by enterprise platform titans (such as Palo Alto Networks, CrowdStrike, and Fortinet) aggressively acquiring niche innovators (e.g., Lacework) alongside fast-growing decacorns like Wiz, while highly specialized open-source tools and boutique compliance orchestrators continue to cater to custom engineering workflows and developer-first security teams.
 
-### Datadog Cloud Security
-**Type:** Observability-integrated security with PCI compliance tools
-Datadog's tools and policies are **PCI v4.0 compliant**, and the platform supports connections to cardholder data environments (CDE) as a connected environment—though Datadog itself does not serve as a CDE for storing, processing, or transmitting cardholder data . Recommended PCI compliance tools include **Sensitive Data Scanner** for discovering and masking cardholder data, **Audit Trail** for audit event analysis, **File Integrity Monitoring**, and **Cloud Security Management** for tracking compliance . Cloud Security Misconfigurations includes **1,000+ out-of-the-box compliance rules** mapped to PCI and SOC2 frameworks, with 15 months of misconfiguration history .
-**Best for:** Organizations already using Datadog for observability wanting PCI compliance tooling integrated into their existing monitoring stack.
+---
 
-### CrowdStrike Falcon
-**Type:** Endpoint protection with PCI DSS validation
-CrowdStrike's Falcon platform has been validated by Coalfire (a PCI QSA) as meeting all elements of **PCI DSS v4 Requirement 5** ("Protect all systems against malware and regularly update antivirus software or programs"), and provides assistance with four additional PCI requirements . CrowdStrike provides a PCI DSS Attestation of Compliance (AOC) for its customers.
-**Best for:** Organizations needing endpoint protection with validated PCI DSS coverage for the malware defense requirement.
+## 🟦 SaaS & Commercial Hosted Platforms
 
-### Wiz
-**Type:** Cloud security with published PCI attestation
-Wiz has published its latest **PCI DSS v4.0.1 Attestation of Compliance (AOC) and Report on Compliance (ROC)** in its Customer Trust Center, providing transparency into its own compliance posture . As a cloud security platform, Wiz helps customers identify and remediate risks in their cloud environments.
-**Best for:** Organizations wanting a cloud security platform whose own PCI compliance documentation is publicly accessible.
+The table below lists leading commercial, cloud-hosted PCI-DSS and Data Security Management platforms sorted in descending order by company size (valuation / annual revenue).
+
+| Company / Product | Size (Valuation / Revenue) 🏢 | Starting Tier Pricing 💰 | Free Tier / Trial Limits ⏳ | PCI DSS & Core Data Security Focus 🛡️ |
+|:---|:---|:---|:---|:---|
+| **[Palo Alto Networks (Prisma Cloud)](https://www.paloaltonetworks.com/prisma/cloud)** | ~$115B Market Cap ($8.0B FY24 Revenue) | Starting at $9,000/year (~$90/credit pack minimum commit for 100 credits) | 30-day full-featured free trial with up to 250 cloud workloads/instances monitored | 50+ compliance frameworks including full PCI-DSS v4.0 mapping, multi-cloud CSPM/CWPP, and automated audit evidence reporting. |
+| **[CrowdStrike Falcon](https://www.crowdstrike.com/)** | ~$85B Market Cap ($3.05B FY24 Revenue) | Falcon Go starting at $59.99/device/year (minimum 5 devices, billed annually at $299.95/yr) | 15-day free trial supporting up to 100 endpoints with Falcon Prevent (NGAV) and Falcon Insight (EDR) | Validated by Coalfire QSA for PCI DSS v4 Requirement 5 (antivirus/anti-malware defenses) with customer Attestation of Compliance (AOC). |
+| **[Datadog Cloud Security](https://www.datadoghq.com/)** | ~$40B Market Cap ($2.13B FY24 Revenue) | Pro Cloud Security Management starting at $7.50/host/month (or $15/host/mo for full Workload Protection) | 14-day free trial with unlimited hosts and full metric retention; Free tier supports up to 5 hosts (metrics only, security scanning requires paid/trial plan) | PCI v4.0 compliant tooling, Sensitive Data Scanner (detecting/masking cardholder data in logs/APM), File Integrity Monitoring (FIM), and 1,000+ out-of-the-box compliance rules. |
+| **[Fortinet (FortiCNAPP / Lacework)](https://www.fortinet.com/)** | ~$65B Market Cap ($5.3B FY24 Revenue; acquired Lacework in 2024) | FortiCNAPP enterprise starting tier at ~$1,200/license/year (or ~$3,000/year base commit via AWS/Azure Marketplace) | 14-day free trial with up to 50 cloud resource units/nodes analyzed | Daily continuous automated compliance reporting against CIS, PCI DSS, SOC 2, and HIPAA with native CLI automation (`lacework compliance`). |
+| **[Wiz](https://www.wiz.io/)** | ~$12B Valuation (Series E, ~$500M ARR) | Enterprise minimum contract starting at ~$15,000–$25,000/year (billed annually based on scanned workloads) | Interactive guided sandbox demo; custom 14-day proof-of-concept (PoC) free trial for verified enterprise accounts | Cloud-native risk graph, automated PCI DSS v4.0.1 compliance checks, and published customer-facing Attestation of Compliance (AOC) / Report on Compliance (ROC). |
+| **[Orca Security](https://orca.security/)** | ~$1.8B Valuation ($50M+ ARR) | Essentials tier starting at ~$12,000/year (~$300–$400/asset/year based on cloud inventory volume) | 30-day free trial with automated agentless scanning for up to 50 virtual machines / cloud assets | 100% agentless multicloud posture covering PCI DSS, SOC 2, HIPAA, and CIS with real-time drift alerts and one-click audit dossiers. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven PCI-DSS and Data Security Management tools. The open-source ecosystem spans **continuous compliance platforms**, **static analysis scanners**, **specialized PCI scanning tools**, and **software composition analysis**.
+Self-hosted, community-driven tools for automated PCI-DSS auditing, sensitive data discovery, vulnerability management, security posture, and compliance validation. Sorted in descending order by GitHub stargazers.
 
-### OpenWatch
-**Stack:** Go / PostgreSQL / React | **License:** GPL (Community) / Commercial (Pro)
-OpenWatch is a continuous compliance platform for **Linux fleets under CIS, STIG, NIST 800-53, NIST 800-171, CMMC Level 2, and PCI DSS** . It connects to servers over SSH, runs the **779-rule Kensa corpus**, and maintains posture as a timeline: what is passing now, what was passing last week, and what drifted since the last assessment . Point-in-time queries (e.g., "Were these 200 servers compliant on January 15th?") are answered in seconds, backed by machine-verifiable evidence exportable as **CSV, JSON, PDF, or OSCAL** . Deploys in 10 minutes on a Linux host with PostgreSQL and 4 GB RAM, no containers required . PCI DSS-specific exception workflows (request, approve, reject, time-limit, revoke) are supported with full audit trail.
-**Best for:** Linux-centric organizations needing continuous PCI DSS compliance monitoring with audit-grade evidence and drift detection.
-
-### Semgrep
-**Stack:** OCaml / Python | **License:** LGPL-2.1 (Open Source) / Commercial
-Semgrep provides static analysis (SAST) that supports PCI DSS compliance efforts, particularly **Requirement 6.2** (protecting systems from known vulnerabilities) and **Requirement 6.3.1** (removing custom application accounts, user IDs, and passwords) . It offers **secrets detection** to prevent hardcoded credentials from reaching production, and policy enforcement at the pull request level to block risky code, with **audit logs** providing documented evidence of vulnerability detection and remediation timelines . CLI and on-premises CI/CD keep code in customer-controlled infrastructure. **Important:** Semgrep does not guarantee compliance—consult with your QSA on how it fits your program.
-**Best for:** Development teams wanting SAST and secrets detection integrated into CI/CD pipelines to support PCI DSS secure coding requirements.
-
-### pci-dss-mcp
-**Stack:** Go | **License:** Open Source (pre-v1.0)
-pci-dss-mcp is a Go-specific PCI DSS scanner that checks **14 PCI DSS v4.0.1 requirements across 10 scanners**, covering Requirements 3, 4, 6, 8, 10, and 11—approximately **6% of all 249 PCI DSS requirements** . Key capabilities include PAN keyword detection, PAN type detection, error leakage checks, and PAN logger detection, with **taint analysis** for data flow tracking (distinguishing transit-only fields from those flowing to database storage) . Findings can be suppressed with `pci-ignore` comments or a `.pci-dss-mcp-ignore` file, with suppressed findings appearing as SUPPRESSED (never silently dropped—auditors must see what was suppressed). **Important:** Static analysis cannot verify organizational policies, physical security, or operational procedures—requirements outside scanner scope are marked NOT_CHECKED, and a QSA must verify these controls. Go only, no Python/Java/.NET support planned.
-**Best for:** Go development teams wanting automated PCI DSS scanning for code-level requirements, accepting the Go-only scope and the need for QSA review of remaining controls.
-
-### Safeguard SCA / SBOM
-**Stack:** (Check repository) | **License:** Open Source (per project)
-Safeguard addresses **PCI DSS 4.0.1 Requirement 6.3.2**, which became mandatory on March 31, 2025, requiring payment processors to maintain a documented inventory of every third-party and open-source component used in bespoke or custom payment software, and to track known vulnerabilities against that inventory on an ongoing basis . The requirement explicitly ties the inventory to patch management—it must be queryable against newly disclosed CVEs, not just descriptive. **SBOMs in SPDX or CycloneDX format** satisfy this obligation as a machine-readable, timestamped, reproducible artifact that can be regenerated on every build . Safeguard provides software composition analysis (SCA) tooling output as evidence that QSAs increasingly expect to see, rather than manually curated spreadsheets.
-**Best for:** Payment processors and software teams needing to satisfy PCI DSS 4.0.1 SBOM and dependency inventory requirements with automated, audit-ready tooling.
-
-### OpenSCAP
-**Stack:** C / Python | **License:** LGPL-2.1
-OpenSCAP is an open-source implementation of the Security Content Automation Protocol (SCAP), providing automated configuration and vulnerability assessment against SCAP benchmarks. While not PCI-DSS-specific, it can be used to assess Linux systems against CIS benchmarks and other hardening standards that support PCI DSS compliance. It is a foundational building block for compliance scanning rather than a turnkey PCI platform.
-**Best for:** Linux administrators wanting SCAP-based configuration assessment as part of a broader compliance program.
+| Project & Repo | Stars 🌟 | Stack / Ecosystem 💻 | License ⚖️ | PCI DSS & Data Security Capabilities 🔍 |
+|:---|:---|:---|:---|:---|
+| **[Trivy](https://github.com/aquasecurity/trivy)** | <a href="https://github.com/aquasecurity/trivy/stargazers"><img src="https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white" alt="Trivy Stars"/></a> | Go | Apache-2.0 | Comprehensive security scanner for container images, file systems, Git repositories, virtual machine images, and Kubernetes. Built-in compliance flags (`trivy k8s --compliance=pci-dss-v4.0`) map vulnerabilities and misconfigurations directly against PCI DSS benchmarks. |
+| **[Osquery](https://github.com/osquery/osquery)** | <a href="https://github.com/osquery/osquery/stargazers"><img src="https://img.shields.io/github/stars/osquery/osquery?style=social&color=white" alt="Osquery Stars"/></a> | C++ | Apache-2.0 / GPL-2.0 | Exposes an operating system as a high-performance relational database. Used across endpoints and servers in Cardholder Data Environments (CDE) to verify file integrity monitoring (FIM), system user privileges, listening ports, and patch compliance required by PCI DSS Requirements 1, 2, 8, 10, and 11. |
+| **[Wazuh](https://github.com/wazuh/wazuh)** | <a href="https://github.com/wazuh/wazuh/stargazers"><img src="https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white" alt="Wazuh Stars"/></a> | C, Python, C++ | GPL-2.0 | Open-source SIEM and XDR engine featuring out-of-the-box rule mappings for **PCI DSS v3.2.1 and v4.0**. Delivers File Integrity Monitoring (FIM - Req 11.5), Log Data Analysis (Req 10), Vulnerability Detection (Req 6.2), and System Hardening evaluation (Req 2). |
+| **[Semgrep](https://github.com/semgrep/semgrep)** | <a href="https://github.com/semgrep/semgrep/stargazers"><img src="https://img.shields.io/github/stars/semgrep/semgrep?style=social&color=white" alt="Semgrep Stars"/></a> | OCaml, Python | LGPL-2.1 / Commercial | Fast static application security testing (SAST) and secrets scanner. Helps enforce PCI DSS Requirement 6.2 (vulnerability elimination) and 6.3.1 (hardcoded credential eradication) with CI/CD gates that prevent leaking sensitive payment data or insecure cryptography. |
+| **[Prowler](https://github.com/prowler-cloud/prowler)** | <a href="https://github.com/prowler-cloud/prowler/stargazers"><img src="https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white" alt="Prowler Stars"/></a> | Python | Apache-2.0 | Open-source cloud security posture assessment tool for AWS, Azure, Google Cloud, and Kubernetes. Includes predefined compliance packs for **PCI-DSS (3.2.1 & 4.0)**, executing hundreds of automated cloud configuration checks with HTML, CSV, and JSON audit evidence output. |
+| **[Syft](https://github.com/anchore/syft)** | <a href="https://github.com/anchore/syft/stargazers"><img src="https://img.shields.io/github/stars/anchore/syft?style=social&color=white" alt="Syft Stars"/></a> | Go | Apache-2.0 | CLI tool and library for generating Software Bills of Materials (SBOMs) in SPDX and CycloneDX formats from container images and filesystems. Directly fulfills mandatory **PCI DSS 4.0 Requirement 6.3.2** (managing and inventorying third-party software components and open-source dependencies). |
+| **[ComplianceAsCode (SSG)](https://github.com/ComplianceAsCode/content)** | <a href="https://github.com/ComplianceAsCode/content/stargazers"><img src="https://img.shields.io/github/stars/ComplianceAsCode/content?style=social&color=white" alt="ComplianceAsCode Stars"/></a> | Python, SCAP, Ansible | LGPL-2.1 | Automated security compliance content and benchmarks. Provides official SCAP profiles and Ansible/Bash remediation playbooks specifically mapped to **PCI-DSS** baselines for Linux systems (RHEL, Ubuntu, Fedora, CentOS, SLE). |
+| **[OpenSCAP](https://github.com/OpenSCAP/openscap)** | <a href="https://github.com/OpenSCAP/openscap/stargazers"><img src="https://img.shields.io/github/stars/OpenSCAP/openscap?style=social&color=white" alt="OpenSCAP Stars"/></a> | C, Python | LGPL-2.1 | NIST-certified Security Content Automation Protocol (SCAP) scanner. Evaluates host configurations, hardening guidelines, and patch levels to enforce and generate machine-readable auditor reports for PCI-DSS compliance in production Linux infrastructure. |
+| **[OpenWatch](https://github.com/Hanalyx/kensa)** | <a href="https://github.com/Hanalyx/kensa/stargazers"><img src="https://img.shields.io/github/stars/Hanalyx/kensa?style=social&color=white" alt="OpenWatch Stars"/></a> | Go, PostgreSQL, React | GPL-3.0 / Commercial | Continuous fleet compliance platform for Linux hosts powered by the 779-rule Kensa corpus. Supports point-in-time drift detection for PCI DSS, NIST 800-53, and CIS, with machine-verifiable evidence exports (CSV, JSON, PDF, OSCAL) and exception audit workflows. |
+| **[pci-dss-mcp](https://github.com/shyshlakov/pci-dss-mcp)** | <a href="https://github.com/shyshlakov/pci-dss-mcp/stargazers"><img src="https://img.shields.io/github/stars/shyshlakov/pci-dss-mcp?style=social&color=white" alt="pci-dss-mcp Stars"/></a> | Go | MIT / Open Source | Static code scanner tailored for Go codebases checking PCI DSS v4.0.1 requirements (covering PAN detection, cardholder data transit vs database leakage, and sensitive logger detection) with transparent suppression tracking. |
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | PCI DSS Coverage | Compliance Reporting | Evidence Export | Self-Hosted | Best For |
-|----------|---------|-------|------------------|----------------------|-----------------|-------------|----------|
-| **Prisma Cloud** | Proprietary | Cloud | ✅ 50+ frameworks | ✅ One-click | ✅ | ❌ | Comprehensive cloud CSPM |
-| **Orca Security** | Proprietary | Cloud | ✅ 185+ frameworks | ✅ One-click | ✅ | ❌ | Agentless multicloud |
-| **Lacework** | Proprietary | Cloud | ✅ CIS/PCI/SOC2/HIPAA | ✅ CLI reports | ✅ PDF/CSV | ❌ | CLI-driven automation |
-| **Datadog** | Proprietary | Cloud | ✅ PCI v4.0 | ✅ 1,000+ rules | ✅ 15-month history | ❌ | Observability-integrated |
-| **CrowdStrike** | Proprietary | Cloud | ✅ Req 5 validated | (AOC provided) | (AOC) | ❌ | Endpoint malware defense |
-| **OpenWatch** | GPL/Commercial | Go/Postgres | ✅ PCI DSS | ✅ Timeline queries | ✅ CSV/JSON/PDF/OSCAL | ✅ | Linux continuous compliance |
-| **Semgrep** | LGPL/Commercial | OCaml/Python | ✅ Req 6.2/6.3.1 | ✅ Audit logs | (CI evidence) | ✅ | SAST + secrets in CI/CD |
-| **pci-dss-mcp** | Open Source | Go | ✅ 6% of 249 reqs | (Findings) | (Reports) | ✅ | Go code-level scanning |
-| **Safeguard SCA** | Open Source | (Check) | ✅ Req 6.3.2 SBOM | (SCA output) | ✅ SBOM | ✅ | Dependency inventory |
+| Tool / Platform | Category | Primary Stack | PCI DSS Coverage Focus | Audit Evidence Formats | Deployment Model | Best Suited For |
+|:---|:---|:---|:---|:---|:---|:---|
+| **Prisma Cloud** | Commercial SaaS | Cloud Multi-Tenant | Broad (50+ standards, full v4.0) | PDF, CSV, API, Executive Dossiers | SaaS / Cloud Agentless + Daemon | Enterprise multi-cloud CSPM & automated QSA evidence |
+| **CrowdStrike Falcon** | Commercial SaaS | Agent / Cloud | Req 5 (Anti-malware) & Host Controls | Attestation of Compliance (AOC), Telemetry | Managed Cloud + Kernel/eBPF Agent | Endpoint malware & detection across CDE environments |
+| **Datadog Security** | Commercial SaaS | Agent / Cloud | Req 10 (Logs), FIM, Sensitive Data Scanner | 15-month historical logs, PDF, Compliance Dashboards | SaaS + Observability Agent | Teams combining observability with PCI posture |
+| **FortiCNAPP (Lacework)**| Commercial SaaS | Cloud Multi-Tenant | CIS, PCI DSS, SOC 2, HIPAA | CLI, PDF, CSV, JSON | SaaS / Agentless & Agent | DevOps & infrastructure teams utilizing CLI-first auditing |
+| **Wiz** | Commercial SaaS | Cloud Multi-Tenant | Cloud Infrastructure & CDE Risk Graph | AOC, ROC, Cloud Audit Reports | SaaS / 100% Agentless API | Fast cloud risk triage and visual architecture scanning |
+| **Orca Security** | Commercial SaaS | Cloud Multi-Tenant | 185+ frameworks including PCI DSS v4 | One-Click Auditor Dossier, CSV | SaaS / Agentless SideScanning™ | Zero-overhead multi-cloud asset discovery and audit prep |
+| **Trivy** | Open Source | Go | Req 6.2, Container & K8s PCI posture | JSON, SARIF, ASCS, Table | Self-Hosted CLI / CI Pipeline | Fast container and Kubernetes PCI compliance checks |
+| **Osquery** | Open Source | C++ | Req 1, 2, 8, 10, 11 (Host telemetry & FIM) | SQLite / JSON query results | Self-Hosted Endpoint Daemon | Host introspection, custom SQL compliance telemetry |
+| **Wazuh** | Open Source | C / Python | Req 10 (Logging), 11.5 (FIM), System Hardening | Elastic/OpenSearch Dashboards, CSV | Self-Hosted On-Prem / Cloud | Turnkey open-source PCI SIEM & XDR |
+| **Semgrep** | Open Source | OCaml / Python | Req 6.2, 6.3.1 (Secrets & SAST) | SARIF, JSON, CI/CD Gate logs | Self-Hosted CLI / On-Prem / SaaS | Secure code review and payment data leak prevention |
+| **Prowler** | Open Source | Python | AWS / Azure / GCP / K8s PCI Benchmarks | HTML, CSV, JSON, JUnit | Self-Hosted CLI / Lambda / Container | Infrastructure-as-code and cloud tenant PCI audits |
+| **Syft** | Open Source | Go | Req 6.3.2 (Mandatory Software Inventory & SBOM)| SPDX, CycloneDX, Syft-JSON | Self-Hosted CLI / Pipeline tool | Automated SBOM generation for cardholder processing software |
+| **ComplianceAsCode** | Open Source | Python / SCAP | OS hardening baselines for PCI-DSS | SCAP XML, HTML checklists, Ansible | Self-Hosted System Hardening | Automated Linux OS hardening and baseline enforcement |
+| **OpenSCAP** | Open Source | C / Python | SCAP evaluation & CIS/PCI benchmark checks | XCCDF, OVAL HTML/XML reports | Self-Hosted CLI / Daemon | Government & enterprise Linux compliance verification |
+| **OpenWatch** | Open Source / Pro | Go / Postgres | Fleet-wide Linux drift & continuous PCI DSS | CSV, JSON, PDF, OSCAL | Self-Hosted Server | Historical point-in-time fleet drift assessment |
+| **pci-dss-mcp** | Open Source | Go | Code-level PAN tracking & taint analysis | Terminal, JSON findings | Self-Hosted Go CLI | Go backend microservices handling cardholder data |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-PCI-DSS-Data-Security-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-PCI-DSS-Data-Security-Management&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+If you find this repository helpful in navigating PCI-DSS compliance, preparing for QSA audits, or securing sensitive cardholder data, thank you for supporting this project!
+
+Here are ways you can contribute:
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** by submitting new tools, updates, or fixes.
+- 📢 **Share** this list with fellow security engineers, compliance managers, and DevOps teams.
+- ☕ **Sponsor / Buy me a coffee:** Support ongoing open-source research and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source PCI-DSS or Data Security Management tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source or notable PCI-DSS / Data Security Management tool that should be included here, please submit a pull request.
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+Please review the guidelines:
+1. Ensure the tool is actively maintained with releases within the last 12 months.
+2. Provide a clear description of which specific PCI DSS requirements (e.g., Req 5 malware, Req 6 secure coding/SBOM, Req 10 logging, Req 11 FIM/testing) or data security vectors the tool addresses.
+3. Keep entries objective and factual without promotional jargon.
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for **PCI DSS compliance** is **fragmented and partial**—no single open-source tool covers the full standard. **OpenWatch** provides the broadest continuous compliance coverage for Linux fleets with audit-grade evidence . **Semgrep** and **pci-dss-mcp** address code-level requirements (secure coding, secrets, PAN detection), with pci-dss-mcp explicitly covering only ~6% of PCI DSS requirements . **Safeguard SCA/SBOM** targets the mandatory Requirement 6.3.2 dependency inventory obligation that became enforceable in March 2025 . For cloud infrastructure compliance, commercial platforms like Prisma Cloud and Orca Security offer far broader framework coverage than any open-source alternative. A QSA must verify controls outside scanner scope—no static tool replaces the assessor.
+> ℹ️ *Note on PCI DSS:* No single automated tool guarantees 100% compliance. A Qualified Security Assessor (QSA) must evaluate your overall control environment, organizational policies, key management, and physical security alongside technical automated scans.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal (CC0 1.0)](LICENSE) Public Domain Dedication. Listed third-party tools, trademarks, and logos are property of their respective owners.
