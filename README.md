@@ -57,7 +57,7 @@ The table below lists leading commercial, cloud-hosted PCI-DSS and Data Security
 
 Self-hosted, community-driven tools for automated PCI-DSS auditing, sensitive data discovery, vulnerability management, security posture, and compliance validation. Sorted in descending order by GitHub stargazers.
 
-| Project & Repo | Stars 🌟 | Stack / Ecosystem 💻 | License ⚖️ | PCI DSS & Data Security Capabilities 🔍 |
+| Project & Repo | GitHub_Stars 🌟 | Stack / Ecosystem 💻 | License ⚖️ | PCI DSS & Data Security Capabilities 🔍 |
 |:---|:---|:---|:---|:---|
 | **[Trivy](https://github.com/aquasecurity/trivy)** | <a href="https://github.com/aquasecurity/trivy/stargazers"><img src="https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white" alt="Trivy Stars"/></a> | Go | Apache-2.0 | Comprehensive security scanner for container images, file systems, Git repositories, virtual machine images, and Kubernetes. Built-in compliance flags (`trivy k8s --compliance=pci-dss-v4.0`) map vulnerabilities and misconfigurations directly against PCI DSS benchmarks. |
 | **[Osquery](https://github.com/osquery/osquery)** | <a href="https://github.com/osquery/osquery/stargazers"><img src="https://img.shields.io/github/stars/osquery/osquery?style=social&color=white" alt="Osquery Stars"/></a> | C++ | Apache-2.0 / GPL-2.0 | Exposes an operating system as a high-performance relational database. Used across endpoints and servers in Cardholder Data Environments (CDE) to verify file integrity monitoring (FIM), system user privileges, listening ports, and patch compliance required by PCI DSS Requirements 1, 2, 8, 10, and 11. |
